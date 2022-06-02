@@ -1,0 +1,63 @@
+.task {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.6rem;
+
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+  & + .task {
+    margin-top: 1.6rem;
+  }
+
+  p {
+    flex: 1;
+  }
+}
+
+.buttonConcluid {
+  background: none;
+  border: 0;
+  color: var(--blue);
+
+  margin-right: 1.6rem;
+
+  line-height: 0;
+
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.concluid {
+  p {
+    text-decoration: line-through;
+    color: var(--gray-300);
+  }
+}
+
+.purple {
+  svg {
+    color: var(--purple);
+  }
+}
+
+.buttonDelete {
+  background: none;
+  border: 0;
+  color: var(--gray-300);
+
+  margin-left: 1.6rem;
+
+  line-height: 0;
+
+  transition: color 0.2s ease;
+  border-radius: 2px;
+
+  &:hover {
+    color: var(--red);
+  }
+}
